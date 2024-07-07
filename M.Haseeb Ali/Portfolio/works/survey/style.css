@@ -1,0 +1,61 @@
+.wrapper {
+    margin-top: 50px;
+    background: rgba(15, 121, 167, 0.493);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    backdrop-filter: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    border: solid 3px rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+
+}
+p{
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    outline-color: #fff;
+    text-decoration-style: solid;
+    font-weight: 1000;
+}
+h1{
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+.input-box input{
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+input::placeholder {
+    padding: 20px;
+    color: #000;
+}
+.wrapper button{
+    margin-top: 50px;
+    border-radius: 30px;
+    height: 40px;
+    width: 60%;
+    font-weight: 900;
+}
+
+.input{
+    background: transparent;
+    border: solid 3px rgba(0, 0, 0, 0.2);
+}
+body{
+     background: radial-gradient(#fff,#437c92);
+}
+/*fonts*/
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  

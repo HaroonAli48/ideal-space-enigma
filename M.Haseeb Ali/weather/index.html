@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="Black">
+   
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="images/search.png" ></button>
+        </div>
+        <div class="weather">
+            <img class="weather-icon" src="images/rain.png" >
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Paindura</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div >
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div >
+                        <p class="wind">15km/h</p>
+                        <p>Wind speed</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+<script>
+    const apiKey="89480568770926a78634ce90945f60f4";
+    const apiURL="https://api.openweathermap.org/data/2.5/weather?";
+    async function checkweather(){
+        const response= await fetch(apiURL + `$appid=${apiKey}`);
+        var data=await response.json();
+        console.log(data);
+    }
+    checkweather();
+</script>
+</body>
+</html>
